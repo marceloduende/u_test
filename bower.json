@@ -4,7 +4,7 @@
   "dependencies": {
     "jquery": "~2.1.0",
     "angular": "~1.2.13",
-    "sizzle": "~1.10.18"
+    "bootstrap": "~3.1.1"
   },
   "devDependencies": {}
 }
