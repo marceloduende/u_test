@@ -1,0 +1,9 @@
+/* line 1, ../sass/main.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+/* line 4, ../sass/main.scss */
+body div {
+  display: block;
+}
