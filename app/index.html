@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang='en' ng-app="app">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Ubqn Test</title>
+  <title>Test</title>
 
   <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  <script src="lib/bower_components/requirejs/require.js" data-main="js/requireConf"></script>
+  
 </head>
 <body>
   <div class="col-xs-12 col-md-8 col-md-offset-2">
-  
-    <h1>My Ubqn Test :)</h1>
-    <div ng-controller="dependenciesCtrl" class="dependencies col-xs-12 col-md-6">
+    <div data-ng-view></div>
+    <h1>My Test :)</h1>
+    <div class="dependencies col-xs-12 col-md-6">
       test
     </div>
     <div class="editing col-xs-12 col-md-6">
       rterte
     </div>
   </div>
-
+  <script src="lib/bower_components/requirejs/require.js" data-main="js/requireConf.js"></script>
 </body>
 </html>

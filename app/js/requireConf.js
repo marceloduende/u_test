@@ -1,6 +1,7 @@
 require.config({
   baseUrl: '/js',
   paths: {
+    'domReady': '../lib/bower_components/requirejs-domready/domReady',
     'jQuery': '../lib/bower_components/jquery/dist/jquery',
     'angular': '../lib/bower_components/angular/angular',
     'angular-route': '../lib/bower_components/angular-route/angular-route',
@@ -12,15 +13,14 @@ require.config({
     'angular-route' : {deps:['angular']},
     'angular-resource' : {deps:['angular']},
     'jQuery' : {'exports' : 'jQuery'},
-  }
+  },
+  deps: ['./bootstrap']
 });
 
-
+/*
 require(['jQuery', 'angular', 'routes/routes'] , function ($, angular, routes) {
-
   $(function () { // using jQuery because it will run this even if DOM load already happened
-    
     //var app = angular.module('app', ['ngResources', 'ngRoute']);
     angular.bootstrap(document , ['app', 'ngRoute', 'ngResources']);
   });
-});
+});*/
