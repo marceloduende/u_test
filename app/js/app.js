@@ -5,6 +5,7 @@
 define([
     'angular',
     'angular-route',
+    'globals',
     './controllers/index',
     './directives/index',
     './filters/index',

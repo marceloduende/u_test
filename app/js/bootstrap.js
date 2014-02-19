@@ -5,6 +5,7 @@
 define([
     'require',
     'angular',
+    'globals',
     'app',
     'routes'
 ], function (require, ng) {
