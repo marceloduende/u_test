@@ -9,7 +9,7 @@ define(['./module'], function (services) {
 
         return {
             loadJson: function(_url){
-                console.log("a");
+                
                 return $http.get(_url);
             }
         }

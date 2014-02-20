@@ -14,8 +14,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      {pattern: 'lib/bower_components/requirejs/require.js', included: false},
-      {pattern: 'lib/bower_components/requirejs-domready/domReady.js', included: false},
+        //{pattern: 'lib/bower_components/requirejs-domready/domReady.js', included: false},
+      //{pattern: 'lib/bower_components/requirejs/require.js', included: false},  
       {pattern: 'lib/bower_components/jquery/dist/jquery.js', included: false},
       {pattern: 'lib/bower_components/angular/angular.js', included: false},
       {pattern: 'lib/bower_components/angular-route/angular-route.js', included: false},
@@ -28,13 +28,19 @@ module.exports = function(config) {
       {pattern: 'js/directives/*.js', included: false},
       {pattern: 'js/filters/*.js', included: false},
       {pattern: 'js/services/*.js', included: false},
+      {pattern: 'js/test/*.js', included: false},
+      {pattern: 'js/mockApi/dependencies.json', included: false},
       'js/requireConf.js'
     ],
 
 
     // list of files to exclude
     exclude: [
-    
+        'js/requireConf.js'.
+        'lib/bower_components/requirejs-domready/domReady.js',
+        
+
+
     ],
 
 

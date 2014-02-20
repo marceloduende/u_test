@@ -4,10 +4,13 @@
  */
 define([
     'require',
+
     'angular',
+    'jQuery',
     'globals',
     'app',
     'routes'
+    //'test/dependenciesTests'
 ], function (require, ng) {
     'use strict';
 

@@ -12,7 +12,7 @@ require.config({
     'angular' : {'exports' : 'angular'},
     'angular-route' : {deps:['angular']},
     'angular-resource' : {deps:['angular']},
-    'jQuery' : {'exports' : 'jQuery'},
+    'jQuery' : {'exports' : 'jQuery'}
   },
   deps: ['./bootstrap']
 });
