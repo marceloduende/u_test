@@ -1,9 +1,10 @@
 <ul>
     <li ng-repeat="link in submenu">
-      <a data="{'name':'{{link.name}}', 'version': '{{link.version}}'" ng-click="edit($event)">{{link.name}} {{link.version}}</a>
+      <a data='{"name":"{{link.name}}", "version": "{{link.version}}"}' ng-click="edit($event)">{{link.name}} {{link.version}}</a>
+
       <div ng-switch on="link.deps.length &gt; 0">
         <div ng-switch-when="true">
-          <div ng-init="submenu = link.deps;" ng-include="'js/views/List.html'"></div>  
+          <div ng-init="submenu = link.deps;" ng-include="'js/views/List.html'"></div>
         </div>
       </div>
     </li>

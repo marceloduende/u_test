@@ -7,13 +7,13 @@
    
 </div>
 
-<div class="editing col-xs-12 col-md-6">
+<div ng-controller="EditCtrl" class="editing col-xs-12 col-md-6">
     <h2>Editing</h2>
     <div>
         <h4>Library Properties</h4>
         
-        Name: <input class="name form-control" type="text" name="name"><br/>
-        Version: <input class="version form-control" type="text" name="version">
+        Name: <input class="name form-control" value="{{name}}" type="text" id="name"><br/>
+        Version: <input class="version form-control" value="{{version}}" type="text" name="version">
         
     </div>
 

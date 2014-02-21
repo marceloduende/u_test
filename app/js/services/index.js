@@ -5,4 +5,4 @@
  * below, you can see we bring in our services and constants modules 
  * which avails each service of, for example, the `config` constants object.
  **/
-define(['./version', './api-services'], function () {});
+define(['./version', './api-services', './broadcast-services'], function () {});
