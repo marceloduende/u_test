@@ -23,8 +23,8 @@ define(['./module'], function (controllers) {
 
             });
 
-            function edit(){
-                console.log("porra");
+            $scope.edit = function(el){
+                console.log(el.srcElement.attributes.data.nodeValue);
             }
 
             

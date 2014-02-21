@@ -1,12 +1,6 @@
-
-
-
-
-
-
 <ul>
     <li ng-repeat="link in submenu">
-      <a href="{{link.url}}">{{link.name}}</a>
+      <a data="{'name':'{{link.name}}', 'version': '{{link.version}}'" ng-click="edit($event)">{{link.name}} {{link.version}}</a>
       <div ng-switch on="link.deps.length &gt; 0">
         <div ng-switch-when="true">
           <div ng-init="submenu = link.deps;" ng-include="'js/views/List.html'"></div>  
@@ -15,14 +9,3 @@
     </li>
 </ul>
 
-<!-- 
-<ul>
-    <li ng-repeat="link in submenu">
-      <a href="{{link.url}}">{{link.text}}</a>
-      <div ng-switch on="link.submenu.length &gt; 0">
-        <div ng-switch-when="true">
-          <div ng-init="submenu = link.submenu;" ng-include="'js/views/List.html'"></div>  
-        </div>
-      </div>
-    </li>
-</ul> -->
