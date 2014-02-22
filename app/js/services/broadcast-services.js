@@ -9,10 +9,12 @@ define(['./module'], function (services) {
 
         var sharedService = {};
     
-        sharedService.message = '';
+        sharedService.data = '';
+        sharedService.el = '';
 
-        sharedService.prepForBroadcast = function(msg) {
-            this.message = msg;
+        sharedService.prepForBroadcast = function(data, element) {
+            this.data = data;
+            this.el = element;
             this.broadcastItem();
         };
 

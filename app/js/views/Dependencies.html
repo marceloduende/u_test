@@ -20,16 +20,18 @@
     <div>
         <h4>Manage Dependencies</h4>
         
-        Filter: <input class="filter form-control" type="text" name="filter"><br/>
+        Filter: <input class="filter form-control" type="text" name="filter" ng-model="searchText"><br/>
         
-        <div class="filterResults">
-            
+        <div class="filterRes">
+            <ul>
+                <li ng-repeat="filterdep in dependencies | filter:searchText">{{filterdep}} <input type="checkbox" class="checkbox"> delete</li>
+            </ul>
         </div>
         
-        Add: <input class="add form-control" type="text" name="add"><br/>
+        Add: <input class="add form-control" value="WIP" type="text" name="add"><br/>
 
         <div>
-            <a class="btn btn-small btn-success" href="#">Save</a>
+            <a class="btn btn-small btn-success" href="#">Save - WIP</a>
         </div>
         
     </div>

@@ -16,11 +16,3 @@ require.config({
   },
   deps: ['./bootstrap']
 });
-
-/*
-require(['jQuery', 'angular', 'routes/routes'] , function ($, angular, routes) {
-  $(function () { // using jQuery because it will run this even if DOM load already happened
-    //var app = angular.module('app', ['ngResources', 'ngRoute']);
-    angular.bootstrap(document , ['app', 'ngRoute', 'ngResources']);
-  });
-});*/

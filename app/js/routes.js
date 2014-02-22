@@ -7,7 +7,7 @@ define(['./app'], function (app) {
     'use strict';
     return app.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/', {
-            templateUrl: 'js/views/dependencies.html'
+            templateUrl: 'js/views/Dependencies.html'
         });
 
         $routeProvider.otherwise({

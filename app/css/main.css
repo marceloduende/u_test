@@ -11,6 +11,19 @@
   list-style: none;
 }
 
+/* line 18, ../sass/_dependencies.scss */
+.editing .filterRes ul {
+  list-style: none;
+}
+/* line 21, ../sass/_dependencies.scss */
+.editing .filterRes input {
+  margin-left: 30px;
+}
+/* line 24, ../sass/_dependencies.scss */
+.editing .filterRes .checkbox {
+  display: inline-block;
+}
+
 /* line 3, ../sass/main.scss */
 body {
   margin: 0;
